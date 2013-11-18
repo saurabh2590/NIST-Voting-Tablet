@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alrt_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F4F4F" >
+
+    <View
+        android:id="@+id/v_scrn_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_scrn_top"
+        android:background="@android:color/black" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/previous" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/ballot_page"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="Alert Page"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alrt_msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="50dp"
+        android:background="@drawable/cstm_alrt_msg_background">
+
+        <TextView
+            android:id="@+id/alrt_msg_one"
+                        style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/alrt_msg_two" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:focusable="true" -->
+    <!-- android:gravity="center_horizontal" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/alrt_msg_three" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:focusable="true" -->
+    <!-- android:gravity="center_horizontal" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/alrt_msg_four" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:focusable="true" -->
+    <!-- android:gravity="center_horizontal" /> -->
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_scrn_btm"
+        android:background="@android:color/background_dark" >
+
+        <!-- <ImageButton -->
+        <!-- android:id="@+id/btn_goto_start" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/background_dark" -->
+        <!-- android:src="@drawable/rewind" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_help"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_decrease"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/vol_dec" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_increase"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/vol_inc" />
+
+        <ImageButton
+            android:id="@+id/btn_font_decrease"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/a_small" />
+
+        <ImageButton
+            android:id="@+id/btn_font_increase"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/a_big" />
+
+        <ImageButton
+            android:id="@+id/btn_goto_end"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:src="@drawable/end" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_scrn_btm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+</RelativeLayout>

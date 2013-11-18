@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NIST</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- acra -->
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report.</string>
+    <string name="crash_toast_text">Apologies! NIST has crashed. Please send a report to help us fix this problem!</string>
+    <string name="crash_notif_title">NIST has crashed.</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+    <string name="crash_dialog_text">We are sorry, but NIST has stopped unexpectedly.\nPlease help us resolve this problem. Select \"OK\" to continue.</string>
+    <string name="crash_dialog_title">NIST Problem Report</string>
+    <string name="crash_dialog_comment_prompt">Please help us resolve this problem by telling us what happened just before the NIST stopped.</string>
+    <string name="crash_dialog_ok_toast">Thank you!</string>
+
+    <!-- punctuation -->
+    <string name="dot">.</string>
+    <string name="comma">,</string>
+
+    <!-- tts -->
+
+    <string name="overvote_yes_referendum">You have accepted this referendum. If you want to change your selection then, first unmark your "Accept" vote and then mark "Reject".</string>
+    <string name="overvote_no_referendum">You have not accepted this referendum. If you want to change your selection then, first unmark your "Reject" vote and then mark "Accept".</string>
+
+    <!-- <string name="tts_after_alrt_bck_btn">Press the back arrow to go back, and vote.</string> -->
+    <!-- <string name="tts_after_alrt_frwrd_btn">Press the forward arrow to ignore this message and go to the next ballot.</string> -->
+    <!-- <string name="go_to_summary">Press the forward arrow to go to the summary page.</string> -->
+    <string name="is_not_marked">is not marked.</string>
+    <string name="failed">Failed</string>
+    <string name="go_down">Go down for more</string>
+    <string name="go_up">Go up for more</string>
+    <string name="want_to_vote">if you want to vote for this person</string>
+    <string name="dont_want_to_vote">if you don\'t want to vote for this person,</string>
+    <string name="circle_post_message">touch the circle to the left of the name</string>
+    <string name="mrk_for">The mark for</string>
+    <string name="marked">marked</string>
+    <string name="not_marked">not marked</string>
+    <string name="erase">Erased</string>
+    <string name="erase_from_ballot">has been erased.</string>
+    <string name="mrk_on_ballot">has been marked on your ballot.</string>
+    <string name="to_acpt_referendum">to accept the referendum</string>
+    <string name="to_reject_referendum">to reject the referendum</string>
+    <string name="to_erase_mark">to erase the mark</string>
+    <string name="erase_other_mark_to_"> You will need to first erase the other mark in order to %1$s the referendum.</string>
+    <string name="writein">Write-In</string>
+    <string name="write_blank">Write-In Blank</string>
+    <string name="entr_text">Please enter text</string>
+    <string name="u_have_typed">You have typed</string>
+    <string name="setting_qrCode">Read setting from QR code</string>
+    <string name="setting_nfctag">Read setting from NFC tag</string>
+    <string name="setting_paper">Read setting from paper</string>
+    <string name="setting_manually">Set the settings manually</string>
+    <string name="contest_skipped">Skipped (no selection made)</string>
+    <string name="change_vote">Change the vote for</string>
+    <string name="submit">Submit</string>
+    <string name="to_continue">to continue</string>
+    <string name="is_empty">is empty</string>
+    <string name="notice_page">Notice Page</string>
+    <string name="over_vote_page">Over-Vote Notice Page</string>
+    <string name="undr_vote_page">Under-Vote Notice page</string>
+    <string name="not_voted_ofc">You have not voted for anyone for this office.</string>
+    <string name="not_voted_referendum">You have not voted for this referendum.</string>
+    <string name="want_vote_ofc">If you want to vote for any of these candidates, press the PAGE BACK button.</string>
+    <string name="want_vote_referendum">If you want to vote for this referendum, press the PAGE BACK button.</string>
+    <string name="alwd_to_choose">You are allowed to choose up to</string>
+    <string name="more_candidate">more candidates for this office.</string>
+    <string name="go_back">Press the PAGE BACK button to go back, and vote.</string>
+    <string name="slct_additional">To select additional</string>
+    <string name="slct_an_additional">To select an additional</string>
+    <string name="press_page_back_btn">press the PAGE BACK button.</string>
+    <string name="repeating">Repeating</string>
+    <string name="prcd_summary_page">Or, to proceed to the Summary page, press the NEXT PAGE button again.</string>
+    <string name="prcd_nxt_ballot_page">Or, to proceed to the next ballot page, press the NEXT PAGE button again.</string>
+    <string name="prcd_prev_ballot_page">Or, to proceed to the previous ballot page, press the NEXT PAGE button again.</string>
+    <!-- <string name="prcd_home_page">Or, to proceed to the Home page, press the NEXT PAGE button again.</string> -->
+    <string name="write_in_vote">Write In Page For</string>
+    <string name="if_u_want_to_vote">If you want to vote</string>
+    <string name="want_to_change_vote">if you want to change, or add a vote</string>
+    <string name="touch_circle_left">touch the circle to the left.</string>
+    <string name="press_round_green_btn">press the round green button on the keypad now</string>
+    <string name="press_enter">press Enter on the keyboard now</string>
+    <string name="election_full_first_erase_mark">you will need to first erase a mark for a different candidate.</string>
+    <string name="chkd">Checked</string>
+    <string name="unchkd">Un checked</string>
+    <string name="is">is</string>
+    <string name="want_to_change">If you want to change your vote, then:</string>
+    <string name="slct_mark">Select a marked candidate again to erase your choice.</string>
+    <string name="slct_another">Then select another candidate to make a new choice.</string>
+    <string name="rejected">Rejected</string>
+    <string name="accepted">Accepted</string>
+    <string name="cant_choose_more">You cannot choose more than</string>
+    <string name="for_office">for this office.</string>
+    <string name="candidate">candidate</string>
+    <string name="candidates">candidates</string>
+    <string name="want_to_mark">If you want to mark this choice, touch the circle to the left of the name.</string>
+    <string name="want_to_erase">If you want to erase the mark for this choice, touch the circle to the left of the name.</string>
+    <string name="ballot_x_of_y">Ballot X of Y</string>
+    <string name="confirmation_x_of_y">Confirmation page</string>
+    <string name="on_first_page">Already on 1st page can\'t go back.</string>
+    <!-- <string name="on_last_page">Already on last page can\'t go further.</string> -->
+    <string name="confirm_choice">Please Confirm Your Choices. \nTo change a choice, select the ballot summary item you want to change.</string>
+    <string name="change_choice">To change a choice. Select the ballot</string>
+    <string name="ballot_page">Ballot Page</string>
+    <string name="u_hav">You have </string>
+    <string name="one">one</string>
+    <string name="choices">choices</string>
+    <string name="u_can_mak">you can make for</string>
+    <string name="more_choice">more choices you can make</string>
+    <string name="of">of</string>
+    <string name="load_election">Load Election</string>
+    <string name="election_past">Past Election</string>
+    <string name="election_future">Future Election</string>
+    <string name="create_interface">Create Interface</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_message">Error Message</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="vote_for">Vote for</string>
+    <string name="jmpng_scrn_top">jumping to top of screen</string>
+    <!-- <string name="goto_start_dialgone">Do you want to go to the start of the ballot?</string> -->
+    <!-- <string name="goto_start_dialgtwo">Do you want to erase all of your votes so far?</string> -->
+    <!-- <string name="goto_start_dialgthree">Are you sure you want to erase all of your votes and start over?</string> -->
+    <string name="goto_summary_page">Do you want to skip over all of the remaining ballot races, and jump directly to the end of the ballot to see a summary of your votes?</string>
+    <string name="dialog_cancel">@android:string/cancel</string>
+    <string name="dialog_ok">@android:string/ok</string>
+    <string name="alrdy_onstart">Already on first ballot page</string>
+    <string name="alredy_mrk">You have already marked</string>
+    <string name="cant_chk">You cannot check this name unless you uncheck</string>
+    <string name="nothing_selected">You have not chosen anything on this page.</string>
+    <string name="under_vote_one">You have only chosen</string>
+    <string name="under_vote_two">people you can vote for on this page</string>
+    <string name="of_the">of the</string>
+    <string name="next_contest_page">Do you want to go to next page anyway? Or do you want to go back and</string>
+    <string name="choose_sumone">choose someone</string>
+    <string name="choose_more_ppl">choose more people</string>
+    <string name="vote_rfrndum">vote on the referendum</string>
+    <string name="dialog_go_to_next">GO TO NEXT BALLOT PAGE</string>
+    <string name="dalg_go_to_nxt">Press go to next ballot page button to jump to next ballot page</string>
+    <string name="dialog_go_back">GO BACK</string>
+    <string name="hint_keyboard_chk">Type the write-in candidate’s name using the keyboard.</string>
+    <string name="keybrd_chk">Check Keyboard</string>
+    <string name="hlp_string_one">Plugin the head phones to listen to the announcements.</string>
+    <string name="hlp_string_two">Use the soft keyboard to enter the text.</string>
+    <string name="hlp_string_three">Use the font button to increase/decrease the size of the text.</string>
+    <string name="hlp_string_four">Use the volume button to increase/decrease the volume.</string>
+    <string name="hlp_string_five">Use top right and left arrow to navigate through the ballots.</string>
+    <string name="hlp_string_six">Touch the name of the candidate to announce his name.</string>
+    <string name="hlp_string_seven">You can use any mode to interact with the ballot - external keyboard, EZ keyboard, touch</string>
+    <string name="hlp_btn">Help button</string>
+    <string name="btn_alrt_ok">OK button</string>
+    <string name="btn_alrt_cancel">Cancel button</string>
+    <string name="previous_page">Previous page</string>
+    <string name="previous_ballot">Previous ballot page.	button</string>
+    <string name="next_ballot">Next ballot page.	button</string>
+    <string name="cast_ballot">Cast Ballot</string>
+    <string name="end_ballot">End the ballot.	button</string>
+    <string name="btn_vol_inc">Volume increase.	 button</string>
+    <string name="btn_vol_dec">Volume decrease.	 button</string>
+    <string name="btn_font_inc">Font size increase.	 button</string>
+    <string name="btn_font_dec">Font size decrease.	 button</string>
+    <string name="btn_sumry">End the ballot and generate summary.	button</string>
+    <string name="btn_help">Help screen.	button</string>
+    <string name="btn_start">Go to first ballot button</string>
+    <string name="btn_exit">Exit button</string>
+    <string name="deleted">deleted</string>
+    <string name="cstm_kyboard_hidn">Keyboard hidden</string>
+    <string name="space">space</string>
+    <string name="nthing_to_dlt">All words deleted. Nothing to delete</string>
+    <string name="help_message">Please plug in the headphones to listen to the announcements.</string>
+    <string name="exit_app">This will exit you out of the application.</string>
+    <string name="go_to_homepage">Do you want to go to the homepage ?</string>
+    <string name="hlp_srn_title">Help Screen</string>
+    <string name="hlp_srn_launched">Going to Help Screen</string>
+    <string name="edit_text_empty">You did not enter any text. Do you want to go to the ballot page and cast vote ?</string>
+    <string name="enter_text">Enter some text</string>
+    <string name="lang_select">Select language for voting</string>
+    <string name="print_large">Touch and present large print</string>
+    <string name="font_size">Set font size</string>
+    <string name="reverse_screen">Reverse screen</string>
+    <string name="synthesizer_voice">Selelct voice synthesizer for announcements</string>
+    <string name="synthesizer_speed">Select voice synthesizer speed</string>
+    <string name="scan_mode">Switch scan mode</string>
+    <string name="scan_mode_speed">Scan mode speed</string>
+    <string name="key_lang">lang</string>
+    <string name="key_large">large</string>
+    <string name="key_font_size">font_size</string>
+    <string name="key_reverse_screen">reverse_screen</string>
+    <string name="key_synthesizer_voice">synthesize_voice</string>
+    <string name="key_synthesizer_speed">synthesize_speed</string>
+    <string name="key_scan_mode">scan</string>
+    <string name="key_scan_mode_speed">scan_speed</string>
+    <string name="two_block_text">2 block text</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="tts_failed">Sorry! TTS failed...</string>
+    <string name="referendum_not_accepted">You did not accept this referendum</string>
+    <string name="referendum_accepted">You accepted this referendum</string>
+    <string name="over_referendum_response">Your response for the referendum is not changed</string>
+    <string name="softest">Softest</string>
+    <string name="softer">Softer</string>
+    <string name="louder">Louder</string>
+    <string name="loudest">Loudest</string>
+    <string name="font_larger">Larger Text</string>
+    <string name="font_largest">Largest Text</string>
+    <string name="font_smaller">Smaller Text</string>
+    <string name="font_smallest">Smallest Text</string>
+    <string name="and">and</string>
+    <string name="voted_for">You have voted for</string>
+    <string name="for_">for</string>
+    <string name="this_ofc">this office</string>
+    <string name="zero">zero</string>
+    <string name="not">not</string>
+    <string name="chosen">chosen</string>
+    <string name="exit_page">Exit Page</string>
+    <string name="vote_ready_cast">Your vote is ready to be cast.</string>
+    <string name="press">Press</string>
+    <string name="cast_ballot_and_finish">cast ballot and finish</string>
+    <string name="below_print_vote">below to print out your votes and finish.</string>
+    <string name="press_back_on_mistake">Press BACK if you got here by mistake and want to continue voting.</string>
+    <string name="made_choice">made a choice</string>
+    <string name="touch_circle_nxt">Touch the circle next to</string>
+    <string name="mark_this">to mark this</string>
+    <string name="mark_this_as">to mark this as</string>
+    <string name="referendum">referendum</string>
+    <string name="as">as</string>
+    <string name="scrn_top">top of page</string>
+    <string name="scrn_bottom">bottom of page</string>
+    <string name="scrn_bottom_press_again">Press the Down Arrow again to go to the top of the page.</string>
+    <string name="u_can_vote">You can vote for</string>
+    <string name="more">more</string>
+    <string name="cast_ballot_finish">cast ballot and finish</string>
+    <string name="ballot_finish">Take printed ballot and put into envelope and take to tabulation machine near exit.</string>
+    <string name="on_this_page">on this page</string>
+    <string name="start_vote">To start vote – place your vote card on square with barcode facing toward screen.</string>
+    <string name="after_confirm">After confirming your choices press the NEXT button to cast your votes.</string>
+    <string name="scan_barcode">To start vote place your vote card on square with barcode facing toward screen.</string>
+    <string name="skip_barcode">Demo - skip barcode</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="button">Button</string>
+
+    <string-array name="vote_per_candidate">
+        <item>Zero</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+    <string-array name="entries_language">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="entryvalues_language">
+        <item>english language value</item>
+        <item>spanish language value</item>
+    </string-array>
+    <string-array name="entries_fontsize">
+        <item>STD</item>
+        <item>LARGE</item>
+        <item>X-LARGE</item>
+    </string-array>
+    <string-array name="entryvalues_fontsize">
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="entries_voice">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="entryvalues_voice">
+        <item>Male value</item>
+        <item>Female value</item>
+    </string-array>
+    <string-array name="entries_voice_speed">
+        <item>STD</item>
+        <item>SLOWEST</item>
+        <item>VERY SLOW</item>
+        <item>SLOW</item>
+        <item>FAST</item>
+        <item>VERY FAST</item>
+        <item>FASTEST</item>
+    </string-array>
+    <string-array name="entryvalues_voice_speed">
+        <item>0.8</item>
+        <item>0.2</item>
+        <item>0.4</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.4</item>
+    </string-array>
+        <string name="you_have_not_cast_a_vote_on_the_referendum_titled">You have not cast a vote on the referendum titled :</string>
+        <string name="if_you_want_to_vote_on_this_referendum">If you want to vote on this referendum</string>
+        <string name="close">CLOSE</string>
+
+</resources>

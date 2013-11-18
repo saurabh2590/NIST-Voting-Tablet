@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/v_scrn_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_scrn_top"
+        android:background="@android:color/black"
+        android:descendantFocusability="beforeDescendants" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:src="@drawable/previous" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/ballot_page"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/write_in_vote"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/second_row"
+                    style="@style/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_keyboard_chk"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/boder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/second_row"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/et_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/boder"
+        android:layout_centerHorizontal="true"
+        android:background="#4F4F4F" >
+
+        <EditText
+            android:id="@+id/et_keybrdchk"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="50dp"
+            android:maxEms="34"
+            android:maxLength="34"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_scrn_btm"
+        android:background="@android:color/background_dark" >
+
+        <ImageButton
+            android:id="@+id/btn_help"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_decrease"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/vol_dec" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_increase"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/vol_inc" />
+
+        <ImageButton
+            android:id="@+id/btn_font_decrease"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/a_small" />
+
+        <ImageButton
+            android:id="@+id/btn_font_increase"
+                        style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/a_big" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_scrn_btm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

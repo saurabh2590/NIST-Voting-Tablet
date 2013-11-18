@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_msg_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F4F4F"
+    android:descendantFocusability="beforeDescendants" >
+
+    <View
+        android:id="@+id/v_scrn_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_scrn_top"
+        android:background="@android:color/black" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/previous" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/ballot_page"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/hlp_srn_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ll_help_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_container"
+        android:layout_below="@+id/top_row" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:focusable="true"
+                android:text="@string/hlp_string_one"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:text="@string/hlp_string_two"
+                                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:text="@string/hlp_string_three"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:text="@string/hlp_string_four"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/padding"
+                                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:text="@string/hlp_string_five"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                                android:textColor="@android:color/white"
+                android:text="@string/hlp_string_six"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                                android:textColor="@android:color/white"
+                android:focusable="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- android:text="@string/hlp_string_seven" -->
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                                android:textColor="@android:color/white"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_scrn_btm"
+        android:background="@android:color/background_dark" >
+
+        <!-- <ImageButton -->
+        <!-- android:id="@+id/btn_goto_start" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/background_dark" -->
+        <!-- android:src="@drawable/rewind" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_decrease"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_dec" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_increase"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_inc" />
+
+        <ImageButton
+            android:id="@+id/btn_font_decrease"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_small" />
+
+        <ImageButton
+            android:id="@+id/btn_font_increase"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_big" />
+
+        <ImageButton
+            android:id="@+id/btn_goto_end"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/end" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_scrn_btm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+</RelativeLayout>

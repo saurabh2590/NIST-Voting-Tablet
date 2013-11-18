@@ -1,0 +1,12 @@
+# British QWERTY keyboard layout
+# missing handling of 102nd key which contains hash and tilde
+# UTF-8 encoded
+# Tushar
+
+type FULL
+
+key BACK {
+    label:                              'BACK'
+    base:                               'back'
+    shift, capslock, ctrl, alt, meta:    none
+}

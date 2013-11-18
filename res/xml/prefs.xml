@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/entries_language"
+        android:entryValues="@array/entryvalues_language"
+        android:key="@string/key_lang"
+        android:title="@string/lang_select"/>
+
+    <SwitchPreference
+        android:key="@string/key_large"
+        android:title="@string/print_large"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:entries="@array/entries_fontsize"
+        android:entryValues="@array/entryvalues_fontsize"
+        android:key="@string/key_font_size"
+        android:title="@string/font_size" />
+
+    <SwitchPreference
+        android:key="@string/key_reverse_screen"
+        android:title="@string/reverse_screen"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:entries="@array/entries_voice"
+        android:entryValues="@array/entryvalues_voice"
+        android:key="@string/key_synthesizer_voice"
+        android:title="@string/synthesizer_voice" />
+    <ListPreference
+        android:entries="@array/entries_voice_speed"
+        android:entryValues="@array/entryvalues_voice_speed"
+        android:key="@string/key_synthesizer_speed"
+        android:title="@string/synthesizer_speed" />
+
+    <SwitchPreference
+        android:key="@string/key_scan_mode"
+        android:title="@string/scan_mode"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:dependency="@string/key_scan_mode"
+        android:entries="@array/entries_voice_speed"
+        android:entryValues="@array/entryvalues_voice_speed"
+        android:key="@string/key_scan_mode_speed"
+        android:title="@string/scan_mode_speed" />
+
+</PreferenceScreen>

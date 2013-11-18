@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true" >
+
+    <View
+        android:id="@+id/v_scrn_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_scrn_top"
+        android:background="@android:color/black" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/ballot_page"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/ballot_x_of_y"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" >
+
+            <requestFocus />
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_row_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_row" >
+
+        <TextView
+            android:id="@+id/second_row"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!-- android:text="@string/two_block_text" -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/boder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/second_row_container"
+        android:background="@android:color/black" />
+
+    <FrameLayout
+            android:id="@+id/frame_scroll_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boder"
+        android:background="#4F4F4F" >
+
+        <Button
+            android:id="@+id/btn_scroll_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/arrow_up"
+            android:drawableRight="@drawable/arrow_up"
+            android:text="@string/go_up"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/ballot_referendum_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frame_scroll_down"
+        android:layout_below="@+id/frame_scroll_up"
+        android:background="#4F4F4F"
+        android:descendantFocusability="beforeDescendants" >
+
+        <!-- #FFB8D0D0 -->
+
+        <ListView
+            android:id="@+id/lv_candidates"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/list_view_boundary"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <!-- android:listSelector="@android:color/transparent" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_referendum_subtitle"
+                style="@style/padding"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/list_view_boundary"
+                android:focusable="true"
+                android:paddingBottom="10dp"
+                android:scrollbars="vertical"
+                android:text="text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:id="@+id/cb_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@android:color/white" >
+
+                <include
+                    android:id="@+id/cb_yes"
+                    style="@style/padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/ballot_choice_row"
+                    android:focusable="true"
+                    android:paddingLeft="10dp" />
+
+                <include
+                    android:id="@+id/cb_no"
+                    style="@style/padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/ballot_choice_row"
+                    android:background="@drawable/contest_row"
+                    android:focusable="true" />
+
+                <!-- <CheckBox -->
+                <!-- android:id="@+id/cb_yes" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:background="@drawable/list_view_boundary" -->
+                <!-- android:button="@drawable/custom_checkbox" -->
+                <!-- android:paddingLeft="10dp" -->
+                <!-- android:paddingBottom="10dp" -->
+                <!-- android:text="@string/yes" /> -->
+
+
+                <!-- <CheckBox -->
+                <!-- android:id="@+id/cb_no" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:paddingBottom="10dp" -->
+                <!-- android:background="@drawable/list_view_boundary" -->
+                <!-- android:button="@drawable/custom_checkbox" -->
+                <!-- android:text="@string/no" /> -->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_scroll_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_container"
+        android:background="#4F4F4F" >
+
+        <Button
+            android:id="@+id/btn_scroll_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/arrow_down"
+            android:drawableRight="@drawable/arrow_down"
+            android:text="@string/go_down"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_scroll_down" -->
+    <!-- style="@style/padding" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignBottom="@+id/ballot_referendum_container" -->
+    <!-- android:layout_alignRight="@+id/ballot_referendum_container" -->
+    <!-- android:background="@drawable/scroll_up_down" -->
+    <!-- android:focusable="true" -->
+    <!-- android:layout_marginEnd="-10dp" -->
+    <!-- android:src="@drawable/arrow_down" /> -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_scroll_up" -->
+    <!-- style="@style/padding" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignBottom="@+id/ballot_referendum_container" -->
+    <!-- android:layout_alignLeft="@+id/ballot_referendum_container" -->
+    <!-- android:layout_marginStart="-10dp" -->
+    <!-- android:background="@drawable/scroll_up_down" -->
+    <!-- android:focusable="true" -->
+    <!-- android:src="@drawable/arrow_up" /> -->
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_scrn_btm"
+        android:background="@android:color/background_dark" >
+
+        <!-- <ImageButton -->
+        <!-- android:id="@+id/btn_goto_start" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/background_dark" -->
+        <!-- android:src="@drawable/rewind" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_decrease"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_dec" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_increase"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_inc" />
+
+        <ImageButton
+            android:id="@+id/btn_font_decrease"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_small" />
+
+        <ImageButton
+            android:id="@+id/btn_font_increase"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_big" />
+
+        <ImageButton
+            android:id="@+id/btn_goto_end"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/end" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_scrn_btm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+</RelativeLayout>

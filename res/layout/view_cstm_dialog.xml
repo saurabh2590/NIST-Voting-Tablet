@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_root_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_scroll_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/arrow_up"
+        android:drawableRight="@drawable/arrow_up"
+        android:text="@string/go_up"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <!-- <ScrollView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center_vertical" -->
+        <!-- android:padding="20dp" > -->
+
+        <TextView
+            android:id="@+id/tv_dialog_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!-- </ScrollView> -->
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_scroll_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:drawableLeft="@drawable/arrow_down"
+        android:drawableRight="@drawable/arrow_down"
+        android:text="@string/go_down"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:paddingBottom="@dimen/standard_padding"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="@dimen/standard_padding"
+        android:text="@string/close" />
+
+</LinearLayout>

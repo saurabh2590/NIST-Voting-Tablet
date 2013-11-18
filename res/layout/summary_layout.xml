@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <View
+        android:id="@+id/v_scrn_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_scrn_top"
+        android:background="@android:color/black" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/previous" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:focusable="true"
+            android:src="@drawable/cast_vote" />
+
+        <TextView
+            android:id="@+id/ballot_page"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/confirmation_x_of_y"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" >
+
+            <requestFocus />
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_row_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_row"
+        android:background="#ffd7d7d7" >
+
+        <TextView
+            android:id="@+id/second_row"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/confirm_choice"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/boder"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/second_row_container"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/lv_summary_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_btn_container"
+        android:layout_below="@+id/boder"
+        android:layout_centerHorizontal="true"
+        android:background="#4F4F4F"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_scroll_up"
+                        android:text="@string/go_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/arrow_up"
+            android:drawableRight="@drawable/arrow_up"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lv_summary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/list_view_boundary"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/black"
+            android:dividerHeight="5dp"
+            android:focusable="false" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_scroll_down"
+            android:text="@string/go_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/arrow_down"
+            android:drawableRight="@drawable/arrow_down"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_scroll_down" -->
+    <!-- style="@style/padding" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignBottom="@+id/lv_summary_container" -->
+    <!-- android:layout_alignRight="@+id/lv_summary_container" -->
+    <!-- android:background="@drawable/scroll_up_down" -->
+    <!-- android:layout_marginEnd="-10dp" -->
+    <!-- android:src="@drawable/arrow_down" -->
+    <!-- android:visibility="gone" /> -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_scroll_up" -->
+    <!-- style="@style/padding" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignBottom="@+id/lv_summary_container" -->
+    <!-- android:layout_alignLeft="@+id/lv_summary_container" -->
+    <!-- android:background="@drawable/scroll_up_down" -->
+    <!-- android:layout_marginStart="-10dp" -->
+    <!-- android:src="@drawable/arrow_up" -->
+    <!-- android:visibility="gone" /> -->
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_scrn_btm"
+        android:background="@android:color/background_dark" >
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_decrease"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_dec" />
+
+        <ImageButton
+            android:id="@+id/btn_volume_increase"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/vol_inc" />
+
+        <ImageButton
+            android:id="@+id/btn_font_decrease"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_small" />
+
+        <ImageButton
+            android:id="@+id/btn_font_increase"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:focusable="true"
+            android:src="@drawable/a_big" />
+
+        <ImageButton
+            android:id="@+id/btn_goto_end"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/end" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_scrn_btm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:focusable="true" />
+
+</RelativeLayout>

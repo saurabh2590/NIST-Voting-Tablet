@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/summary_row_root"
+    style="@style/padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_ballot"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- <include -->
+    <!-- layout="@layout/ballot_choice_row" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content"/> -->
+
+</LinearLayout>
